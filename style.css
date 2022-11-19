@@ -9,7 +9,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+section {
+    overflow: hidden;
+}
 /* End All */
 
 /* Header */
@@ -30,8 +32,13 @@
 .nav-item .nav-link:hover {
     color: blue;
 }
-
+/* Modal Sign Up */
+#registerCheck {
+    width: auto;
+}
+/* End Modal Sign Up */
 /* End Header */
+
 /* Banner */
 #banner {
     width: 100%;
@@ -47,7 +54,37 @@
     color: aliceblue;
     padding-left: 50px;
 }
+/* Typed */
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
 
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+    opacity: 0;
+    display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 /* End Banner */
 /* Product */
 #product .content {
