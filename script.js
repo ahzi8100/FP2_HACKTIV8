@@ -1,16 +1,16 @@
 // alert Login
-function log(){
-    Swal.fire({
-        icon: 'error',
-        title: 'Oops...',
-        text: 'Email and password do not match! Please check again.',
-        footer: '<a href="">Help?</a>'
-      })
+function log() {
+  Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Email and password do not match! Please check again.',
+    footer: '<a href="">Help?</a>'
+  })
 }
 
 // alert Sign Up
 function regis() {
-    Swal.fire("Account has been created, please check your email!");
+  Swal.fire("Account has been created, please check your email!");
 }
 
 // Text Typed
